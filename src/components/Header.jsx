@@ -40,7 +40,7 @@ const Header = () => {
             <div className="header__top">
                 <Link onClick={() => onCategoryClick(0)} to='/home' className="header__logo logo">
                     <div className="logo__img">
-                        <img src="./img/header/logo.jpg" alt="" />
+                        <img src="../img/header/logo.jpg" alt="" />
                     </div>
                     <div className="logo__info">
                         <h2 className="logo__name">lia pizza</h2>
