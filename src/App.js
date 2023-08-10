@@ -24,11 +24,11 @@ function App() {
           <Header />
           <div className="main">
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/delivery-service/home" element={<Home />} />
               {/* <Route path="/pizza" element={<PizzaBlock />} /> */}
               {/* <Route path="/burgers" element={<BurgerBlock />} /> */}
-              <Route path="cart" element={<Cart />} />
-              <Route path="/product/:id" element={<ProductFullInfo />} />
+              <Route path="/delivery-service/cart" element={<Cart />} />
+              <Route path="/delivery-service/product/:id" element={<ProductFullInfo />} />
             </Routes>
           </div>
         </BrowserRouter>
