@@ -38,7 +38,7 @@ const Header = () => {
         <div className="header">
             <div className="header__container">
             <div className="header__top">
-                <Link onClick={() => onCategoryClick(0)} to='/home' className="header__logo logo">
+                <Link onClick={() => onCategoryClick(0)} to='home' className="header__logo logo">
                     <div className="logo__img">
                         <img src="img/header/logo.jpg" alt="" />
                     </div>
