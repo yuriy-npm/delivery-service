@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from 'react-router-dom'
 import { addItemtoState, addToCart } from "../../redux/slices/CartSlice"
 import { useDispatch, useSelector } from 'react-redux'
-
+import { fetchProductFullInfo } from "../../redux/slices/ProductSlice"
 
 const PizzaItem = ({ id, index, imageUrl, title, types, sizes, prices, category }) => {
     const dispatch = useDispatch()
@@ -42,7 +42,7 @@ const PizzaItem = ({ id, index, imageUrl, title, types, sizes, prices, category 
     }
     return (
         <div id={id} className="product">
-            <Link to={`/product/${id}`} >
+            <Link to={`product/${id}`} >
                 <div className="product__img">
                     <img src={imageUrl} alt="" />
                 </div>

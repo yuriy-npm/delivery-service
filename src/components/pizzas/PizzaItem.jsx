@@ -33,7 +33,6 @@ const PizzaItem = ({ id, index, imageUrl, title, types, sizes, prices, category 
             <li onClick={() => setActiveSizeBtn(index)} key={index} className={el.available ? (activeSizeBtn === index ? 'product__size _active' : 'product__size') : 'product__size _blocked'}>{el.size}</li>
         )
     })
-
     const onAddClick = (id, index, imageUrl, title, type, size, price, category) => {
         const superId = index + type + size
         // const findItem = cartItems.find(cartitem => cartitem.superId === superId)
@@ -42,7 +41,7 @@ const PizzaItem = ({ id, index, imageUrl, title, types, sizes, prices, category 
     }
     return (
         <div id={id} className="product">
-            <Link to={`/product/${id}`} >
+            <Link to={`product/${id}`} >
                 <div className="product__img">
                     <img src={imageUrl} alt="" />
                 </div>

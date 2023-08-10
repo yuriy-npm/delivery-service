@@ -10,8 +10,6 @@ export const fetchProduct = createAsyncThunk(
   async (params) => {
     // const { search, currentPage, productPerPage, activeCategory, sortMethod } = params;
     const {activeCategory, subType, productPerPage, currentPage, sortMethod, searchValue} = params;
-    console.log(`https://649d91ab9bac4a8e669df4c0.mockapi.io/cards?${activeCategory > 0 ? `&category=${activeCategory}` : ""}${searchValue ? `&search=${searchValue}` : ""}&page=${currentPage}&limit=${productPerPage}&sortBy=${sortMethod.sortBy}&order=${sortMethod.sortOrder}`
-    );
     const { data } = await axios.get(
       `https://649d91ab9bac4a8e669df4c0.mockapi.io/cards?${subType > 0 ? `subType=${subType}` : (activeCategory > 0 ? `&category=${activeCategory}` : "")}${searchValue ? `&search=${searchValue}` : ""}&page=${currentPage}&limit=${productPerPage}&sortBy=${sortMethod.sortBy}&order=${sortMethod.sortOrder}`
       )
@@ -65,6 +63,7 @@ export const ProductSlice = createSlice({
         state.productInfoItem = []
     },
     [fetchProductFullInfo.fulfilled]: (state, action) => {
+      
         state.productInfoItem = action.payload
         state.isFetching = 'success'
         

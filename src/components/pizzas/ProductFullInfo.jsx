@@ -14,27 +14,24 @@ const ProductFullInfo = () => {
     const dispatch = useDispatch()
     const { id } = useParams()
 
-
     useEffect(() => {
         dispatch(fetchProductFullInfo(id))
-    }, [])
+    }, [id])
 
     const [activeTypeBtn, setActiveTypeBtn] = React.useState(0)
     const [activeSizeBtn, setActiveSizeBtn] = React.useState(0)
     const { productInfoItem, isFetching } = useSelector(state => state.product)
 
-
     if (isFetching === 'fetching') {
         return (
             <Loader />
-        )
-    }
-
-    if (isFetching === 'success') {
+            )
+        }
+        
+        if (isFetching === 'success' && productInfoItem.id) {
         return (
             <div id={id} className="product-info">
                 {parseInt(productInfoItem.category) === 1 ?
-
                     <PizzaItem {...productInfoItem} />
                     : <BurgerItem {...productInfoItem} />
                 }
