@@ -1,0 +1,114 @@
+.none {
+  display: none !important;
+}
+
+.btn__circule {
+  font-size: 22px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #FE5F1E;
+  color: #FE5F1E;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+@media (any-hover: hover) {
+  .btn__circule:hover {
+    background-color: #FE5F1E;
+    color: #fff;
+  }
+}
+
+.btn__circule-remove {
+  border: 1px solid #D0D0D0;
+  color: #D0D0D0;
+}
+@media (any-hover: hover) {
+  .btn__circule-remove:hover {
+    border: 1px solid #747474;
+    color: #747474;
+    background-color: #fff;
+  }
+}
+@media (max-width: 630px) {
+  .btn__circule-remove {
+    font-size: 16px;
+  }
+}
+
+.btn__long {
+  width: 211px;
+  height: 55px;
+  border-radius: 30px;
+  border: 1px solid #D3D3D3;
+  background: #FFF;
+  color: #D3D3D3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 630px) {
+  .btn__long {
+    width: 150px;
+    height: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .btn__long {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+[class*=__container] {
+  padding: 0 30px;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  [class*=__container] {
+    padding: 0 15px;
+  }
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.App {
+  background-color: #252525;
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 480px) {
+  .App {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.wrapper {
+  min-height: calc(100vh - 80px);
+  flex: 1 1 auto;
+  background-color: #fff;
+  max-width: 1300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=common.css.map */

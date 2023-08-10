@@ -1,0 +1,61 @@
+.burger-Item {
+  max-width: 280px;
+}
+.burger-Item__img {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+}
+.burger-Item__img img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+@media (any-hover: hover) {
+  .burger-Item__img img:hover {
+    transform: scale(1.1);
+  }
+}
+.burger-Item__title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 22px;
+  text-align: center;
+}
+.burger-Item__buy-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger-Item__price {
+  font-size: 22px;
+  font-weight: 700;
+}
+.buy-btn {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: 1px solid #EB5A1E;
+  color: #EB5A1E;
+  background-color: #FFF;
+  transition: 0.3s;
+}
+.buy-btn:hover {
+  background-color: #EB5A1E;
+  color: #FFF;
+}
+.buy-btn:active {
+  transform: translateY(2px);
+}
+.buy-btn__quantity {
+  padding: 5px 11px;
+  background-color: #EB5A1E;
+  color: #FFF;
+  border-radius: 50%;
+}/*# sourceMappingURL=BurgerItem.css.map */

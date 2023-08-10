@@ -1,0 +1,83 @@
+.burger-content__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.burger-content__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 280px);
+  gap: 40px;
+}
+
+.burger-Item {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.burger-Item__img {
+  position: relative;
+  padding-bottom: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.burger-Item__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s;
+}
+@media (any-hover: hover) {
+  .burger-Item__img img:hover {
+    transform: scale(1.1);
+  }
+}
+.burger-Item__title {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+.burger-Item__buy-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger-Item__price {
+  font-size: 22px;
+  font-weight: 700;
+}
+.buy-btn {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: 1px solid #EB5A1E;
+  color: #EB5A1E;
+  background-color: #FFF;
+  transition: 0.3s;
+}
+.buy-btn:hover {
+  background-color: #EB5A1E;
+  color: #FFF;
+}
+.buy-btn:active {
+  transform: translateY(2px);
+}
+.buy-btn__quantity {
+  padding: 5px 11px;
+  background-color: #EB5A1E;
+  color: #FFF;
+  border-radius: 50%;
+}/*# sourceMappingURL=Burgers.css.map */

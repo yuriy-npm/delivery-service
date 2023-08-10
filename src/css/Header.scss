@@ -1,0 +1,148 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    // padding-top: 30px;
+    // padding-bottom: 30px;
+    margin-bottom: 30px;
+    // padding-bottom: 30px;
+    border: 1px solid #000;
+
+    @media (max-width: 480px) {
+        border: none;
+        border-bottom: 1px solid #000;
+    }
+
+
+    // .header__container
+
+    &__container {
+        flex: 1 1 auto;
+        // min-height: 150px;
+        height: 100%;
+        display: flex;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__top {
+        padding-top: 30px;
+        min-height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        @media (max-width: 767.98px) {
+            flex-wrap: wrap;
+            min-height: 100px;
+        }
+        @media (max-width: 480px) {
+            padding-top: 10px;
+        }
+    }
+    // .header__logo
+
+    &__logo {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    // .header__cart
+
+    &__cart {}
+}
+
+.logo {
+
+    // .logo__img
+
+    &__img {
+        width: 40px;
+        height: 40px;
+
+        @media (max-width: 400px) {
+            width: 30px;
+            height: 30px;
+        }
+
+    & img {
+        max-width: 100%;
+    }
+    }
+
+    // .logo__info
+
+    &__info {}
+
+    // .logo__name
+
+    &__name {
+        font-size: 24px;
+        font-weight: 800;
+        text-transform: uppercase;
+
+        @media (max-width: 400px) {
+            font-size: 18px;
+        }
+    }
+
+    // .logo__text
+
+    &__text {
+        color: #7B7B7B;
+        font-size: 16px;
+
+        @media (max-width: 400px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.cart-btn {
+    color: #fff;
+    background-color: #FE5F1E;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    // .cart__sum
+    // &::before {
+    //     content: '';
+    //     width: 1px;
+    //     height: 20px;
+    //     background-color: #fff;
+    // }
+
+    @media (max-width: 400px) {
+        font-size: 14px;
+        padding: 7px 12px;
+    }
+    &__sum {
+        border-right: 1px solid #fff;
+        padding-right: 15px;
+
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+
+    // .cart__quantity
+
+    &__quantity {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        @media (max-width: 400px) {
+            font-size: 14px;
+         }
+    }
+
+    &__icon {
+        
+    }
+}

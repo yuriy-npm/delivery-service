@@ -1,0 +1,116 @@
+.product-info {
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+  max-width: 560px;
+  padding-bottom: 20px;
+}
+.product-info__img {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.product-info__img img {
+  width: 100%;
+  height: 100%;
+}
+.product-info__title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 22px;
+  text-align: center;
+}
+.product-info__options {
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: #F3F3F3;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.product-info__type-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+.product-info__type {
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  flex: 1 1 auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.product-info__type._active {
+  background-color: #fff;
+}
+.product-info__type._blocked {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+.product-info__size-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+.product-info__size {
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  flex: 1 1 auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.product-info__size._active {
+  background-color: #fff;
+}
+.product-info__size._blocked {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+.product-info__buy-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-info__price {
+  font-size: 22px;
+  font-weight: 700;
+}
+.buy-btn {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: 1px solid #EB5A1E;
+  color: #EB5A1E;
+  background-color: #FFF;
+  transition: 0.3s;
+}
+.buy-btn:hover {
+  background-color: #EB5A1E;
+  color: #FFF;
+}
+.buy-btn:active {
+  transform: translateY(2px);
+}
+.buy-btn__quantity {
+  padding: 5px 11px;
+  background-color: #EB5A1E;
+  color: #FFF;
+  border-radius: 50%;
+}/*# sourceMappingURL=ProductInfo.css.map */

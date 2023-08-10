@@ -1,0 +1,107 @@
+.category {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    // justify-content: space-between;
+
+    // .menu__items
+    &__value {
+        font-weight: 700;
+
+        @media (min-width: 990px) {
+            display: none;
+        }
+    }
+
+
+    &__items {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    // .menu__item
+
+    &__item {}
+
+    // .menu__btn
+
+    &__btn {
+        display: inline-block;
+        font-size: 16px;
+        padding: 7px 20px;
+        border-radius: 20px;
+        background-color: #F9F9F9;
+        color: #2C2C2C;
+        font-weight: 800;
+        transition: .3s;
+
+        &._active {
+            color: #fff;
+            background-color: #282828;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+    }
+
+    @media (max-width: 990px) {
+        font-size: 14px;
+
+        & span {
+            color: #FE5F1E;
+        }
+
+        &__items {
+            transform: translateY(-50px);
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            z-index: 10;
+            top: 30px;
+            left: 0;
+            background-color: #fff;
+            padding: 10px 30px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 9px -1px rgba(0, 0, 0, 0.61);
+            display: flex;
+            row-gap: 10px;
+            flex-direction: column;
+            transition: 0.3s;
+
+            &._active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+
+            }
+        }
+
+        &__btn {
+            background-color: transparent;
+            padding: 0;
+            font-weight: 400;
+            font-size: 18px;
+
+            &._active {
+                background-color: transparent;
+                color: #2C2C2C;
+            }
+
+            @media (any-hover: hover) {
+                &:hover {
+                    color: #FE5F1E;
+                }
+            }
+        }
+    }
+
+
+    // .menu__sort
+
+    &__sort {}
+}
+
+.sort {}
